@@ -1,1 +1,1 @@
-# Diabetes-Prediction-ML-Web-Integration-Project
+The main aim of this project is to develop predictive machine learning model for assessing diabetes vulnerability and developing a Flask-based webpage to connect users with the model's predictions which will help us to gain insights into diabetes trends and patient susceptibility and thus enable early interventions and personalized healthcare strategies.
