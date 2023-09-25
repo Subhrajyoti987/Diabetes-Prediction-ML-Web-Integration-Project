@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my page</title>
+
+<style>
+div {
+  /* background-color: background: src(#bg-div); */
+  width: 500px;
+  border: 0.1px solid black;
+  position: absolute;
+  padding: 50px;
+  margin: 10px;
+  top: 20%;
+  left: 30%
+}
+.first{
+position: absolute;
+left:42%
+}
+body{
+background-color: rgb(21, 160, 188)
+}
+body {
+  background-image: url('https://www.endocrine.org/-/media/endocrine/images/patient-engagement-webpage/condition-page-images/diabetes-and-glucose-metabolism/diabetes_and_endocrine_function_pe_1796x943.jpg');
+  color: #FFFFFF;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment : fixed;
+  height: 680px
+}
+#heading{
+   color : black
+  }
+
+
+
+  .form{
+  color:white;
+  text-align: center;
+  color: black;
+  font-size: large;
+
+  }
+  p{
+  color: black;
+  font-size: large;
+  }
+  .after{
+  color: black;
+  text-align : center;
+   font-size: large;
+  }
+  .predict{
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 45%;
+
+  }
+  
+
+</style>
+
+</head>
+<body style="color:black">
+
+<h1 class="first" id="heading">Diabetes Prediction</h1>
+<section id="sec1">
+<div >
+
+<p><b>Please Enter Your following details to know the chances</b></p>
+<form class="form" action="/predict" method="POST">
+  <b>
+  <label >Enter gender(1 as male 0 as female):</label><br>
+  <input type="number"  name="gender" ><br>
+  <label >Enter your age</label><br>
+  <input type="number"  name="age"><br>
+    <label >Do you have hypertension(if yes then press 1 else press 0)</label><br>
+  <input type="number"  name="hypertension"><br>
+    <label >Do you have heart diseases(if yes then press 1 else press 0)</label><br>
+  <input type="number"  name="heart_diseases"><br>
+    <label >What's your smoking_status(no info-> 0, never-> 4/2, former 3/5, current 1)</label><br>
+  <input type="number"  name="smoking_history"><br>
+    <label >What is your bmi(Avg bmi 28)</label><br>
+  <input type="number"  name="bmi" ><br>
+    <label >What's your HbA1c_level(Avg 4-5)</label><br>
+  <input type="text" inputmode="decimal"   name="HbA1c_level"><br>
+  <label >What's your blood_glucose_level(Avg 120-140)</label><br>
+  <input type="number"  name="blood_glucose_level"><br>
+    <br>
+  <input class="predict" type="submit"  value="Predict" style="color:green"><br>
+    </b>
+</form>
+  <br>
+  <br>
+  <p class="after">Chance of your of not having diabetes :-</p> <p class="after"><b>{{result1}}</b></p><br>
+  <p class="after">chance of having  a diabetes :-</p> <p class="after"><b>{{result2}}</b></p>
+    </div>
+  </section>
+</body>
+</html>
+
