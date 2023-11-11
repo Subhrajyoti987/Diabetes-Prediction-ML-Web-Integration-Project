@@ -1,0 +1,66 @@
+body {
+    background-image: url(img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(127, 16, 16);
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.form input[type="number"],
+.form input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.form input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: green;
+    margin-left: 280px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+.after {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+}
